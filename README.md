@@ -3,6 +3,15 @@
 [![CircleCI](https://circleci.com/gh/futurenda/gomail.svg?style=svg)](https://circleci.com/gh/futurenda/gomail)
 [![Documentation](https://godoc.org/github.com/futurenda/gomail?status.svg)](https://godoc.org/github.com/futurenda/gomail)
 
+## About this Fork
+
+This is forked version of [@alexcesaro](https://github.com/alexcesaro)'s awesome project [gomail](https://github.com/go-gomail/gomail).
+
+### Diff
+
+- [Accept io.Reader for Attach and Embed](https://github.com/futurenda/gomail/pull/1)
+- Switch to Circle CI
+
 ## Introduction
 
 Gomail is a simple and efficient package to send emails. It is well tested and
