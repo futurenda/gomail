@@ -103,6 +103,14 @@ func (m *Message) SetHeader(field string, value ...string) {
 	m.header[field] = value
 }
 
+// SetHeader2 sets a slice of values to the given header field
+func (m *Message) SetHeader2(field string, values ...[]string) {
+	for i := range values {
+		m.encodeHeader(values[i])
+		m.header[field] = values[i]
+	}
+}
+
 func (m *Message) encodeHeader(values []string) {
 	for i := range values {
 		values[i] = m.encodeString(values[i])
